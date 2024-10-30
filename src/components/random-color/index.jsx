@@ -1,3 +1,4 @@
+import './styles.css';
 import { useEffect, useState } from "react";
 
 export default function RandomColor() {
@@ -32,12 +33,8 @@ export default function RandomColor() {
     }, [typeOfColor]);
 
     return (
-        <div
-            style={{
-                width: "100vw",
-                height: "100vh",
-                background: color,
-            }}
+        <div className='color-container'
+            style={{ background: color }}
         >
             <button onClick={() => setTypeOfColor('hex')}>Create HEX Color</button>
             <button onClick={() => setTypeOfColor('rgb')}>Create RGB Color</button>
@@ -46,18 +43,7 @@ export default function RandomColor() {
             }
             >Generate Random Color
             </button>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "#fff",
-                    fontSize: "60px",
-                    marginTop: "50px",
-                    flexDirection: "column",
-                    gap: "20px",
-                }}
-            >
+            <div className="color-name-container">
                 <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
                 <h1>{color}</h1>
             </div>

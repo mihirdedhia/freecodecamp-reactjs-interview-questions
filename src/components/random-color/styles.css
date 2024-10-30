@@ -1,0 +1,22 @@
+.color-container {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.color-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:768px) {
+    .color-name-container{
+        font-size: 20px;
+    }
+}

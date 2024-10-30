@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 
 import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom"
 import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section"
@@ -31,58 +31,86 @@ function App() {
 
   return (
     <>
-      <h1>react app freecodecamp projects</h1>
+      <h1 className='app-title'>react app freecodecamp projects</h1>
 
-      {/* Accordian component */}
-      <Accordian />
+      <div className="outer-container">
+        {/* Accordian component */}
+        <Accordian />
+      </div>
 
-      {/* Random Color component */}
-      <RandomColor />
+      <div className="outer-container">
+        {/* Random Color component */}
+        <RandomColor />
+      </div>
 
-      {/* Star Rating component */}
-      <StarRating noOfStars={10} />
+      <div className="outer-container">
+        {/* Star Rating component */}
+        <StarRating noOfStars={10} />
+      </div>
 
-      {/* Image Slider component */}
-      <ImageSlider
-        url={"https://picsum.photos/v2/list"}
-        page={"1"}
-        limit={"10"}
-      />
+      <div className="outer-container">
+        {/* Image Slider component */}
+        <ImageSlider
+          url={"https://picsum.photos/v2/list"}
+          page={"1"}
+          limit={"10"}
+        />
+      </div>
 
-      {/* Load More Products component */}
-      <LoadMoreData />
+      <div className="outer-container">
+        {/* Load More Products component */}
+        <LoadMoreData />
+      </div>
 
-      {/* Tree view component / menu UI component / recursive navigation menu */}
-      <TreeView menus={menus} />
+      <div className="outer-container">
+        {/* Tree view component / menu UI component / recursive navigation menu */}
+        <TreeView menus={menus} />
+      </div>
 
-      {/* QR Code Generator */}
-      <QRCodeGenerator />
+      <div className="outer-container">
+        {/* QR Code Generator */}
+        <QRCodeGenerator />
+      </div>
 
-      {/* Light and Dark Theme switch */}
-      <LightDarkMode />
+      <div className="outer-container">
+        {/* Light and Dark Theme switch */}
+        <LightDarkMode />
+      </div>
 
       {/* Scroll Indicator component */}
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
 
-      {/* Custom Tabs component */}
-      <TabsTest />
+      <div className="outer-container">
+        {/* Custom Tabs component */}
+        <TabsTest />
+      </div>
 
-      {/* Custom Modal component */}
-      <ModalTest />
+      {/* <div className="outer-container"> */}
+        {/* Custom Modal component */}
+        <ModalTest />
+      {/* </div> */}
 
-      {/* Github Profile Finder */}
-      <GithubProfileFinder />
+      <div className="outer-container">
+        {/* Github Profile Finder */}
+        <GithubProfileFinder />
+      </div>
 
-      {/* Search Autocomplete */}
-      <SearchAutoComplete />
+      <div className="outer-container">
+        {/* Search Autocomplete */}
+        <SearchAutoComplete />
+      </div>
 
-      {/* Tic Tac Toe */}
-      <TicTacToe />
+      <div className="outer-container">
+        {/* Tic Tac Toe */}
+        <TicTacToe />
+      </div>
 
-      {/* Feature Flag Implementation */}
-      <FeatureFlagGlobalState>
-        <FeatureFlags />
-      </FeatureFlagGlobalState>
+      <div className="outer-container">
+        {/* Feature Flag Implementation */}
+        <FeatureFlagGlobalState>
+          <FeatureFlags />
+        </FeatureFlagGlobalState>
+      </div>
 
       {/* useFetch - Custom Hook */}
       <UseFetchHookTest />
@@ -98,7 +126,7 @@ function App() {
 
       {/* Scroll to a particular section */}
       <ScrollToSection />
-      
+
     </>
   )
 }

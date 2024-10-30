@@ -65,7 +65,7 @@ export default function ScrollIndicator({ url }) {
     }
 
     return (
-        <div>
+        <div className="outer-container">
             <div className="top-container">
                 <h1>Custom Scroll Indicator</h1>
                 <div className="scroll-progress-tracking-container">

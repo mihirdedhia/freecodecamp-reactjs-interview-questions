@@ -24,7 +24,7 @@ export default function LoadMoreData() {
                 setLoading(false);
             }
 
-            console.log(result);
+            // console.log(result);
         } catch (error) {
             console.log(error);
             setLoading(false);
@@ -46,7 +46,7 @@ export default function LoadMoreData() {
     }
 
     return (
-        <div className="container">
+        <div className="load-more-container">
             <div className="product-container">
                 {
                     products && products.length

@@ -50,6 +50,7 @@ export default function ScrollToSection() {
 
     function handleScrollToSection() {
         let pos = ref.current.getBoundingClientRect().top;
+        // console.log(pos, "ref.current.getBoundingClientRect().top", ref.current);
 
         window.scrollTo({
             top: pos,

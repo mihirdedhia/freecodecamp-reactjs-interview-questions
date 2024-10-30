@@ -40,7 +40,7 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
         if (url !== "") fetchImages(url)
     }, [url])
 
-    console.log(images);
+    // console.log(images);
 
     if (loading) {
         return (
@@ -55,7 +55,7 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
     }
 
     return (
-        <div className="container">
+        <div className="container image-container">
             <BsArrowLeftCircleFill onClick={handlePrevious} className="arrow arrow-left" />
             {
                 images && images.length ?
